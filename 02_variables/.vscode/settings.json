@@ -1,0 +1,7 @@
+{
+  "java.project.sourcePaths": [
+    "ejemplos",
+    "ejercicios"
+  ],
+  "java.debug.settings.onBuildFailureProceed": true
+}
