@@ -5,7 +5,7 @@ public class T02Ejercicio01 {
 
     System.out.println(num1 + num2 + " es el resultado de la suma.");
     System.out.println(num1 - num2 + " es el resultado de la resta.");
-    System.out.println(num1 / num2 + " es el resultado de la division.");
+    System.out.println((float) num1 / (float) num2 + " es el resultado de la division.");
     System.out.println(num1 * num2 + " es el resultado de la multiplicacion.");
   }
 }
