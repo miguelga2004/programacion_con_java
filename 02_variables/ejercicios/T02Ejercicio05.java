@@ -1,6 +1,5 @@
 public class T02Ejercicio05 {
   public static void main(String[] args) {
-    System.out.println("HOLA");
     int pesetas = 1000;
     int euros = (int)(pesetas / 166.386);
 
