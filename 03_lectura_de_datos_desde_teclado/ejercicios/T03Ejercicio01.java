@@ -17,5 +17,7 @@ public class T03Ejercicio01 {
     num2 = sc.nextInt();
 
     System.out.println("El resultado de multiplicar " + num1 + " x " + num2 + " es " + num1*num2);
+    
+    sc .close();
   }
   }
