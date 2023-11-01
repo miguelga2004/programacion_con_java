@@ -24,5 +24,6 @@ public class T03Ejercicio04 {
     System.err.println("El resultado de restar " + num1 + " - " + num2 + " es = " + (num1-num2));
     System.err.println("El resultado de multiplicar " + num1 + " * " + num2 + " es = " + (num1*num2));
     System.err.println("El resultado de dividir " + num1 + " / " + num2 + " es = " + (float)(num1/num2));
+    sc .close();
   }
 }

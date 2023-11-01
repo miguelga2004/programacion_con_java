@@ -4,7 +4,7 @@
  */
 import java.util.Scanner;
 
-public class T03Ejercicio05 {
+public class T03Ejercicio06 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     float base;
@@ -15,7 +15,7 @@ public class T03Ejercicio05 {
     System.out.print("Introduce la altura: ");
     altura = sc.nextFloat();
 
-    System.out.println("El area del rectangulo es: " + base*altura);
+    System.out.println("El area del triangulo es: " + (base*altura)/2);
 
     sc .close();
   }
