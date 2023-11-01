@@ -13,7 +13,7 @@ public class T03Ejercicio10 {
     System.out.print("Introduce la cantidad de Megabits: ");
     megabite = sc.nextInt();
 
-    resultado = megabite*1000;
+    resultado = megabite*1024;
 
     System.out.println("El resultado de pasar " + megabite + "Mb a Kb es = " + resultado + "Kb");
     
