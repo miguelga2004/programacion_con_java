@@ -9,7 +9,7 @@ public class ejemplo02 {
     Scanner sc = new Scanner(System.in);
     int numero;
     
-    System.out.print("Introduce un numero entre el 1 y el 100: ");
+    System.out.print("Introduce un numero entre el 1 y  el 100: ");
     numero = sc.nextInt();
 
     if ((numero >= 1) && (numero <= 100)) {
