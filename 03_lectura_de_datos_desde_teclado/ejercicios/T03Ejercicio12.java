@@ -5,7 +5,7 @@
 import java.util.Scanner;
 public class T03Ejercicio12 {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+    Scanner sc   = new Scanner(System.in);
     float nota1;
     float notaDeseada;
     float notaNecesaria;
