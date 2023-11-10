@@ -49,7 +49,7 @@ public class T04Ejercicio22 {
 
     int minutosTranscurridos = (diasTranscurridos * 24 *60) + (hora * 60) + minutos;
 
-    System.out.println("Faltan " + (MINUTOSTOTALES - minutosTranscurridos) + " minutos para llegar al fin de semana:");
+    System.out.println("Faltan " + (MINUTOSTOTALES - minutosTranscurridos) + " minutos para llegar al fin de sem");
 
   }  
 }
