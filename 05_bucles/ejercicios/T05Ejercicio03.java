@@ -9,7 +9,7 @@ public class T05Ejercicio03 {
     
     do {
       System.out.println(i + " X 5 = " + (i*5));
-      i++;
+      i+=5;
     } while (i<=100);
 
   }

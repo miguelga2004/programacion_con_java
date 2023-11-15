@@ -7,20 +7,28 @@ public class T05Ejercicio07 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int respuesta;
-    for (int i = 0; i < 5;) {
+    int i;
+    for (i = 0; i < 5;) {
       System.out.print("Introduce la contraseña: ");
       respuesta = sc.nextInt();
+      
       if (respuesta==4444) {
-        System.out.println("*****La caja fuerte se ha abierto satisfactoriamente.*****");
-        i = i + 5;
+        System.out.println("-----COMBINACION CORRECTA-----");
+        i = i + 6;
       } else {
-
-        System.out.println("*****Lo siento, esa no es la combinación*****");
+        System.out.println("-----COMBINACION INCORRECTA-----");
         i = i + 1;
       }
     }
-    
 
-    sc.close();
+    System.out.println("");
+
+    if (i==5) {
+      System.out.println("-----LA CAJA HA SIDO BLOQUEADA-----");
+      System.out.println("");
+    } else{
+      System.out.println("€€€€€€€€");
+      System.out.println(""); 
+    }
   }
 }

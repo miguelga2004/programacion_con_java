@@ -8,7 +8,7 @@ public class T05Ejercicio05 {
     int i = 360;
   
     while (i>=160) {
-      System.out.println(i-0);
+      System.out.println(i);
       i = i - 20 ;
     }
 
