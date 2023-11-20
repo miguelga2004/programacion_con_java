@@ -36,6 +36,7 @@ public class Ejercicio_ejemplo03 {
         System.out.println("El area de el triangulo es " + (base*altura)/2);
         break;
     }
+    sc.close(); 
   }
   
 }

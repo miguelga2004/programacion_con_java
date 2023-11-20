@@ -21,6 +21,6 @@ public class Ejercicio_ejemplo01 {
         System.out.println("Es jubilado");
       }
     }
-
+    sc.close(); 
   }
 }

@@ -66,5 +66,6 @@ public class Ejercicio_ejemplo02 {
       default:
         break;
     }
+    sc.close(); 
   }
 }

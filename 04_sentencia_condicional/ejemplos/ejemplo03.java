@@ -26,6 +26,7 @@ public class ejemplo03 {
       System.out.println("Dia no valido");
         break;
     }
+    sc.close(); 
       // switch (dia) {
     //   case 1:
     //     System.out.println("Es dia lectivo");
