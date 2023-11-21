@@ -60,12 +60,12 @@
       System.out.println("El IVA introducido no existe. ");
       break;
   }
-
-  System.out.println("Base imponible = " + precio);
-  System.out.println("IVA = " + totalIVA);
-  System.out.println("Precio con IVA = " + (precio+totalIVA));
-  System.out.println("Cod promo = -" + (precio-totalPromocion));
-  System.out.println("TOTAL = " + ((precio+totalIVA)-totalPromocion));
+  
+  System.out.printf("%-20s %8.2f\n", "Base imponible =", precio);
+  System.out.printf("%-20s %8.2f\n", "IVA", totalIVA);
+  System.out.printf("%-20s %8.2f\n", "Precio con IVA", (precio+totalIVA));
+  System.out.printf("%-20s %8.2f\n", "Cod promo", (-1*(totalPromocion)));
+  System.out.printf("%-20s %8.2f\n", "TOTAL", ((precio+totalIVA)-totalPromocion));
 
 
   sc.close();    
