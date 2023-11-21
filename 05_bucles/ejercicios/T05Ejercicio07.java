@@ -18,6 +18,7 @@ public class T05Ejercicio07 {
       } else {
         System.out.println("-----COMBINACION INCORRECTA-----");
         i = i + 1;
+        System.out.println("Llevas " + i + " intentos de 4.");
       }
     }
 
