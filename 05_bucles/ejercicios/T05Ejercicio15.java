@@ -3,7 +3,7 @@
  * @author Miguel Garcia
  */
 import java.util.Scanner;
-public class T05Ejercicio14 {
+public class T05Ejercicio15 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
   
@@ -16,8 +16,7 @@ public class T05Ejercicio14 {
     double potencia = Math.pow(base, exponente);
 
     System.out.printf("El resultado de la potencia es : %.0f", potencia);
-
-    
+        
     sc.close();
   }
 }
