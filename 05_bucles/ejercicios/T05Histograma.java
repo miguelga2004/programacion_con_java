@@ -1,29 +1,57 @@
+/**
+ * Explica tu codigo aqui
+ * @author Miguel Garcia
+ */
 import java.util.Scanner;
-
 public class T05Histograma {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int num=0;
+        int cantNum = 0;
+        int copia = 0;
+        int numCompleto = 0;
+        int mult = 1;
+        int resto = 10;
+        int divisor = 1;
 
-        // Pedir un carácter por teclado
-        System.out.print("Introduce un carácter: ");
-        char caracter = scanner.next().charAt(0);
+        System.out.println("Introduce con que caracter quieres que se complete la tabla: ");
+        String caracter = sc.nextLine();
 
-        // Pedir números enteros hasta que se introduzca un número negativo
-        System.out.println("Introduce números enteros (termina con un número negativo):");
+        System.out.println("Introduzca numeros entre 0 y 9. Si desea parar introduzca numero negativo");
         
-        int numero = scanner.nextInt();
-        while (numero >= 0) {
-            // Mostrar la tabla con el carácter repetido
-            System.out.print(numero + " | ");
-            for (int i = 0; i < numero; i++) {
-                System.out.print(caracter + " ");
-            }
-            System.out.println();
+        while ((num>=0)&&(num<10)) {
 
-            // Pedir el siguiente número
-            numero = scanner.nextInt();
+            num = sc.nextInt();
+            cantNum ++;
+            copia = num;
+            
+            if ((copia>=0)&&(copia<10)) {
+                copia *= mult;
+                mult *= 10;
+                numCompleto = numCompleto + copia;
+            }
         }
 
-        scanner.close();
+        for (int i = 0; i < (cantNum-1); i++) {
+            int digito = ((numCompleto%resto)/divisor);
+            System.out.println(" --- --- --- --- --- --- --- --- --- ---");
+            System.out.print("| " + digito + " |");
+            
+                for (int j = 0; j < digito; j++) {
+                    System.out.print(" " + caracter + " |");
+                }
+
+                int huecos = 9 - digito;
+
+                for (int j = 0; j < huecos; j++) {
+                    System.out.print("   |");
+                }
+
+                System.out.println( "");
+            
+            resto *= 10;
+            divisor *= 10;
+        }
+        sc.close();
     }
 }
