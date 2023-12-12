@@ -7,7 +7,7 @@ public class T05Histograma {
     public static void main(String[] args) {
         //No es la forma mas eficiente pero es la que he conseguido
         Scanner sc = new Scanner(System.in);
-        int num=0;
+        int num = 0;
         int cantNum = 0;
         int copia = 0;
         int numCompleto = 0;
@@ -42,7 +42,7 @@ public class T05Histograma {
             
                 //Este primer bucle nos permirte imprimir cajas que contencan el caracter introducido hasta el tamaño del numero
                 for (int j = 0; j < digito; j++) {
-                    System.out.print(" " + caracter + " |");
+                    System.out.print(" \u001B[32m" + caracter + "\u001B[0m |");
                 }
 
                 //Aqui calculamos cuantas cajas harian falta para llegara 9, y hacemos un blucle que imprima las cajas vacias necesarias hasta llegar a 9.
@@ -56,6 +56,8 @@ public class T05Histograma {
             resto *= 10;
             divisor *= 10;
         }
+        System.out.println(" --- --- --- --- --- --- --- --- --- ---");
         sc.close();
     }
+    //
 }
