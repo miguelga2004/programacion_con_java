@@ -46,15 +46,60 @@ public class Varias {
     }
   }
 
+  
+  /** 
+   * Voltear un número introducido por teclado
+   * @param x un numero de tipo long 
+   * @return long el numero volteado
+   */
+  public static long voltear(long x){
+    if (x < 0) {
+      return voltear(-x);
+    }
+    long numVolt = 0;
+    while (x > 0) {
+      numVolt = (numVolt*10) + (x%10);
+      x /= 10;
+    }
+    return numVolt;
+  }
+
+  
+  /** 
+   * Voltearun nu introducido por teclado, llamando a la funcion original que devuelve un long
+   * @param x Un numero entero
+   * @return int Devuelve int castando el resultado de llamar a la funcion long voltea()
+   */
+  public static int voltear(int x){
+    return (int) voltear((long)x);
+  }
+
+  public static boolean esCapicua(long x){
+  return x == voltear(x);
+  }
+
+  public static boolean esCapicua(int x){
+  return esCapicua((long)x);
+  }
+
+  public static int siguientePrimo(int x){
+  while (!esPrimo(++x)) {
+  }
+  return x;
+  }
+
   public static int fibonacci(int x) {
     int a = 0;
-     int b = 1;
+    int b = 1;
     for (int i = 0; i < x; i++) {
-       int c = a + b;
+      int c = a + b;
       a = b;
       b = c;
-        return a;
       }
-    }
-
+      return a;
+  }
+  
 }
+
+
+
