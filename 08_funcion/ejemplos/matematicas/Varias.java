@@ -74,30 +74,63 @@ public class Varias {
     return (int) voltear((long)x);
   }
 
+  
+  /** 
+   * @param x
+   * @return boolean
+   */
   public static boolean esCapicua(long x){
   return x == voltear(x);
   }
 
+  
+  /** 
+   * @param x
+   * @return boolean
+   */
   public static boolean esCapicua(int x){
   return esCapicua((long)x);
   }
 
+  
+  /** 
+   * @param x
+   * @return int
+   */
   public static int siguientePrimo(int x){
   while (!esPrimo(++x)) {
   }
   return x;
   }
 
-  public static int fibonacci(int x) {
+ 
+ /** 
+  * @param numIntroducido
+  * @return long
+  */
+ public static long fibonacci(int numIntroducido){
     int a = 0;
     int b = 1;
-    for (int i = 0; i < x; i++) {
-      int c = a + b;
-      a = b;
-      b = c;
-      }
-      return a;
+
+    for (int i = 0; i < numIntroducido; i++) {
+        int c = a + b;
+        a = b;
+        b = c;
+        System.err.print(a + " ");
+    }
+    return b;
   }
+
+  
+  /** 
+   * @param base
+   * @param exponente
+   * @return long
+   */
+  public static long potencia(int base, int exponente) {
+      return (long) Math.pow(base, exponente);
+  }
+
   
 }
 
