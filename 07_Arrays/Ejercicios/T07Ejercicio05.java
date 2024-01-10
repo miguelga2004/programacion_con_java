@@ -29,7 +29,6 @@ public class T07Ejercicio05 {
       if (numero[i] == minimo) {
         System.out.print(" minimo");
       }
-      System.out.println("");
     }
   }
 }
