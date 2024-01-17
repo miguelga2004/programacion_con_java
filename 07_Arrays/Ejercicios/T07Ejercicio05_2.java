@@ -35,8 +35,7 @@ public class T07Ejercicio05_2 {
       }
       System.out.println();
     }
-
-    System.out.printf("%5s\n",minimo);
+    
     System.out.printf("%5d en posicion " + filaMinimo + " en la columna " + columnaMinimo + "\n", minimo);    
     System.out.printf("%5d en posicion " + filaMaximo + " en la columna " + columnaMaximo, maximo);    
 }
