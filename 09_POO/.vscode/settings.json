@@ -2,6 +2,7 @@
   "java.project.sourcePaths": [
     "ejercicios",
     "ejemplos",
-    "ejemplos\\Animal"
+    "ejemplos\\Animal",
+    "ejercicios\\Ejercicio12"
   ]
 }
