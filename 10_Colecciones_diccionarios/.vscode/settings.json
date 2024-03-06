@@ -1,6 +1,8 @@
 {
   "java.project.sourcePaths": [
     "ejemplos",
-    "ejercicios"
+    "ejercicios",
+    "ejercicios\\t10_ejer8",
+    "ejercicios\\prueba_examen"
   ]
 }
